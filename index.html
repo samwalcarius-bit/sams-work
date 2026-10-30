@@ -74,6 +74,14 @@ h2 {
   object-fit: cover;
   background: #000;
 }
+.card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.card.has-video { grid-column: span 2; }
+@media (max-width: 640px) { .card.has-video { grid-column: auto; } }
 .card .body { padding: 12px 14px 16px; }
 .card h3 { margin: 0 0 4px; font-size: 1.1rem; }
 .card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
@@ -202,11 +210,11 @@ footer a { color: var(--accent); }
     <a class="watch" href="https://youtu.be/L6uo9vz_ivk">Watch</a>
   </div>
 </article>
-<article class="card">
-  <img src="deck-trax-tour.jpg" alt="DECK TRAX tour" loading="lazy">
+<article class="card has-video">
+  <video controls preload="none" playsinline poster="deck-trax-tour.jpg" src="deck-trax-tour.mp4">Your browser cannot play this video.</video>
   <div class="body">
     <h3>DECK TRAX tour</h3>
-    <p>A tour of DECK TRAX.</p>
+    <p>A tour of DECK TRAX, the Brain-Deck music maker. Press play.</p>
   </div>
 </article>
 <article class="card">
