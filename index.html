@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sam's work</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <meta name="description" content="Pixel art, small games and tools, made in my own Brain-Deck.">
   <style>
 :root {
@@ -40,6 +41,8 @@ body {
 }
 .wrap { max-width: 1100px; margin: 0 auto; }
 header { padding: 40px 0 24px; }
+.brand { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.logo { width: 72px; height: 72px; border-radius: 16px; flex: none; }
 h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; }
 .tagline { margin: 0 0 4px; font-size: 1.15rem; }
 .place { margin: 0; color: var(--muted); }
@@ -103,26 +106,31 @@ footer a { color: var(--accent); }
 <body>
 <div class="wrap">
   <header>
+    <div class="brand">
+      <img class="logo" src="logo.png" alt="Brain-Lab Creations logo" width="72" height="72">
+      <div>
     <h1>Sam's work</h1>
     <p class="tagline">Pixel art, small games and tools, made in my own Brain-Deck</p>
     <p class="place">Houthulst, Belgium</p>
+      </div>
+    </div>
     <img class="hero" src="collage-all.jpg" alt="A collage of films, pictures and games">
   </header>
   <section id="films-and-demos">
     <h2>Films and demos</h2>
     <div class="grid">
 <article class="card">
-  <img src="ai-brain-lab-film.jpg" alt="AI Brain Lab film" loading="lazy">
+  <img src="ai-brain-lab-film.jpg" alt="Brain-Lab film" loading="lazy">
   <div class="body">
-    <h3>AI Brain Lab film</h3>
-    <p>A film about the AI Brain Lab.</p>
+    <h3>Brain-Lab film</h3>
+    <p>A film about the Brain-Lab.</p>
   </div>
 </article>
 <article class="card">
-  <img src="ai-brain-lab-film-2.jpg" alt="AI Brain Lab film 2" loading="lazy">
+  <img src="ai-brain-lab-film-2.jpg" alt="Brain-Lab film 2" loading="lazy">
   <div class="body">
-    <h3>AI Brain Lab film 2</h3>
-    <p>The second AI Brain Lab film.</p>
+    <h3>Brain-Lab film 2</h3>
+    <p>The second Brain-Lab film.</p>
   </div>
 </article>
 <article class="card">
@@ -183,10 +191,10 @@ footer a { color: var(--accent); }
   </div>
 </article>
 <article class="card">
-  <img src="promo-ai-brain-lab.jpg" alt="AI Brain Lab promo" loading="lazy">
+  <img src="promo-ai-brain-lab.jpg" alt="Brain-Lab promo" loading="lazy">
   <div class="body">
-    <h3>AI Brain Lab promo</h3>
-    <p>Promo film for the AI Brain Lab.</p>
+    <h3>Brain-Lab promo</h3>
+    <p>Promo film for the Brain-Lab.</p>
   </div>
 </article>
     </div>
@@ -239,10 +247,9 @@ footer a { color: var(--accent); }
     </div>
   </section>
   <footer>
-    <p>Everything here is made by me with free and open tools.</p>
+    <p>Made in the Brain-Deck by Brain-Lab Creations.</p>
     <p>&copy; 2026 Sam. All rights reserved.</p>
   </footer>
 </div>
 </body>
 </html>
-
