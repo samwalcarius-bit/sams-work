@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sam's work</title>
+  <meta name="description" content="Pixel art, small games and tools, made in my own Brain-Deck.">
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f7f5;
+  --fg: #16181a;
+  --muted: #5b6066;
+  --card: #ffffff;
+  --line: #dcdcd6;
+  --accent: #1f6f5c;
+  --note: #8a5a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181a;
+    --fg: #eeeeea;
+    --muted: #a8adb4;
+    --card: #1f2225;
+    --line: #33373b;
+    --accent: #6fd2b4;
+    --note: #e0b25e;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  padding: 0 16px 48px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.wrap { max-width: 1100px; margin: 0 auto; }
+header { padding: 40px 0 24px; }
+h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; }
+.tagline { margin: 0 0 4px; font-size: 1.15rem; }
+.place { margin: 0; color: var(--muted); }
+.hero { display: block; width: 100%; height: auto; border-radius: 10px; margin: 24px 0 8px; }
+section { margin-top: 40px; }
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: #000;
+}
+.card .body { padding: 12px 14px 16px; }
+.card h3 { margin: 0 0 4px; font-size: 1.1rem; }
+.card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+.note { margin-top: 8px !important; color: var(--note) !important; font-size: 0.85rem !important; }
+.watch {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 2px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+footer a { color: var(--accent); }
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .card img { height: 150px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Sam's work</h1>
+    <p class="tagline">Pixel art, small games and tools, made in my own Brain-Deck</p>
+    <p class="place">Houthulst, Belgium</p>
+    <img class="hero" src="collage-all.jpg" alt="A collage of films, pictures and games">
+  </header>
+  <section id="films-and-demos">
+    <h2>Films and demos</h2>
+    <div class="grid">
+<article class="card">
+  <img src="ai-brain-lab-film.jpg" alt="AI Brain Lab film" loading="lazy">
+  <div class="body">
+    <h3>AI Brain Lab film</h3>
+    <p>A film about the AI Brain Lab.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="ai-brain-lab-film-2.jpg" alt="AI Brain Lab film 2" loading="lazy">
+  <div class="body">
+    <h3>AI Brain Lab film 2</h3>
+    <p>The second AI Brain Lab film.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="para-fruit-dev-vlog.jpg" alt="PARA-FRUIT development vlog" loading="lazy">
+  <div class="body">
+    <h3>PARA-FRUIT development vlog</h3>
+    <p>Development vlog for PARA-FRUIT.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="brain-deck-ad.jpg" alt="Brain-Deck ad" loading="lazy">
+  <div class="body">
+    <h3>Brain-Deck ad</h3>
+    <p>Ad film for the Brain-Deck.</p>
+    <a class="watch" href="https://youtu.be/L6uo9vz_ivk">Watch</a>
+  </div>
+</article>
+<article class="card">
+  <img src="deck-trax-tour.jpg" alt="DECK TRAX tour" loading="lazy">
+  <div class="body">
+    <h3>DECK TRAX tour</h3>
+    <p>A tour of DECK TRAX.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="deep-room.jpg" alt="DEEP ROOM" loading="lazy">
+  <div class="body">
+    <h3>DEEP ROOM</h3>
+    <p>DEEP ROOM, a DECK TRAX piece on the tablet.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="rainlight-build.jpg" alt="RAINLIGHT build" loading="lazy">
+  <div class="body">
+    <h3>RAINLIGHT build</h3>
+    <p>Build video for RAINLIGHT, part 2.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-para-fruit.jpg" alt="PARA-FRUIT promo" loading="lazy">
+  <div class="body">
+    <h3>PARA-FRUIT promo</h3>
+    <p>Promo film for PARA-FRUIT.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-bird-lookout.jpg" alt="Bird Lookout promo" loading="lazy">
+  <div class="body">
+    <h3>Bird Lookout promo</h3>
+    <p>Promo film for Bird Lookout.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-brain-cut.jpg" alt="Brain Cut promo" loading="lazy">
+  <div class="body">
+    <h3>Brain Cut promo</h3>
+    <p>Promo film for Brain Cut.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-ai-brain-lab.jpg" alt="AI Brain Lab promo" loading="lazy">
+  <div class="body">
+    <h3>AI Brain Lab promo</h3>
+    <p>Promo film for the AI Brain Lab.</p>
+  </div>
+</article>
+    </div>
+  </section>
+  <section id="games-and-tools">
+    <h2>Games and tools</h2>
+    <div class="grid">
+<article class="card">
+  <img src="brain-deck-ad.jpg" alt="Brain-Deck" loading="lazy">
+  <div class="body">
+    <h3>Brain-Deck</h3>
+    <p>A home-made game console with several games.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="deck-trax-tour.jpg" alt="DECK TRAX" loading="lazy">
+  <div class="body">
+    <h3>DECK TRAX</h3>
+    <p>The music maker inside the Brain-Deck.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-para-fruit.jpg" alt="PARA-FRUIT" loading="lazy">
+  <div class="body">
+    <h3>PARA-FRUIT</h3>
+    <p>A game in the Brain-Deck.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-bird-lookout.jpg" alt="Bird Lookout" loading="lazy">
+  <div class="body">
+    <h3>Bird Lookout</h3>
+    <p>The bird-watching app.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="rainlight-build.jpg" alt="RAINLIGHT" loading="lazy">
+  <div class="body">
+    <h3>RAINLIGHT</h3>
+    <p>A game built in DECK FORGE.</p>
+  </div>
+</article>
+<article class="card">
+  <img src="promo-brain-cut.jpg" alt="Brain Cut" loading="lazy">
+  <div class="body">
+    <h3>Brain Cut</h3>
+    <p>A tool for cutting films together.</p>
+  </div>
+</article>
+    </div>
+  </section>
+  <footer>
+    <p>Everything here is made by me with free and open tools.</p>
+    <p>&copy; 2026 Sam. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
+
