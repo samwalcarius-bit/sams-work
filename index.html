@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -81,6 +81,7 @@ h2 {
   background: #000;
 }
 .card.has-video { grid-column: span 2; }
+  .card iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000; }
 @media (max-width: 640px) { .card.has-video { grid-column: auto; } }
 .support {
   background: var(--card);
@@ -183,13 +184,6 @@ footer a { color: var(--accent); }
   </div>
 </article>
 <article class="card">
-  <img src="art-three-01-lighthouse.png" alt="Lighthouse island" loading="lazy">
-  <div class="body">
-    <h3>Lighthouse island</h3>
-    <p>3D scene from the Brain-Deck, made in DECK FORGE.</p>
-  </div>
-</article>
-<article class="card">
   <img src="art-fig-05-knight.png" alt="Knight" loading="lazy">
   <div class="body">
     <h3>Knight</h3>
@@ -252,20 +246,6 @@ footer a { color: var(--accent); }
     <p>Pixel art made in my own Brain-Deck, in DECK FORGE.</p>
   </div>
 </article>
-<article class="card">
-  <img src="art-three-02-outpost.png" alt="Desert outpost under two moons" loading="lazy">
-  <div class="body">
-    <h3>Desert outpost under two moons</h3>
-    <p>3D scene from the Brain-Deck, made in DECK FORGE.</p>
-  </div>
-</article>
-<article class="card">
-  <img src="art-three-03-turntable.png" alt="Wizard turntable" loading="lazy">
-  <div class="body">
-    <h3>Wizard turntable</h3>
-    <p>3D scene from the Brain-Deck, made in DECK FORGE.</p>
-  </div>
-</article>
     </div>
   </section>
   <section id="films-and-demos">
@@ -274,23 +254,39 @@ footer a { color: var(--accent); }
 <article class="card has-video">
   <video controls preload="none" playsinline poster="brain-lab-film-poster.jpg" src="brain-lab-film.mp4">Your browser cannot play this video.</video>
   <div class="body">
-    <h3>Brain-Lab film</h3>
-    <p>A film about the Brain-Lab. Press play.</p>
-  </div>
-</article>
-<article class="card">
-  <img src="brain-deck-ad.jpg" alt="Brain-Deck ad" loading="lazy">
-  <div class="body">
-    <h3>Brain-Deck ad</h3>
-    <p>Ad film for the Brain-Deck.</p>
-    <a class="watch" href="https://youtu.be/L6uo9vz_ivk">Watch</a>
+    <h3>Brain-Lab film: the helper program prototype</h3>
+    <p>A film about the Brain-Lab. This is the helper program prototype. Press play.</p>
   </div>
 </article>
 <article class="card has-video">
-  <video controls preload="none" playsinline poster="deck-trax-tour.jpg" src="deck-trax-tour.mp4">Your browser cannot play this video.</video>
+  <iframe src="https://www.youtube-nocookie.com/embed/L6uo9vz_ivk" title="Brain-Deck ad" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
   <div class="body">
-    <h3>DECK TRAX tour</h3>
-    <p>A tour of DECK TRAX, the Brain-Deck music maker. Press play.</p>
+    <h3>Brain-Deck ad</h3>
+    <p>Ad film for the Brain-Deck. Press play.</p>
+    <a class="watch" href="https://youtu.be/L6uo9vz_ivk">Watch on YouTube</a>
+  </div>
+</article>
+<article class="card has-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/088VUXkuqr0" title="BRAIN-DECK intro" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  <div class="body">
+    <h3>BRAIN-DECK intro</h3>
+    <p>The Brain-Deck explained, with voice (9 min). Press play.</p>
+    <a class="watch" href="https://youtu.be/088VUXkuqr0">Watch on YouTube</a>
+  </div>
+</article>
+<article class="card has-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/NvOa6ityP1s" title="DECK TRAX under the hood" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  <div class="body">
+    <h3>DECK TRAX under the hood</h3>
+    <p>How the DECK TRAX music maker works inside, with voice (7 min). Press play.</p>
+    <a class="watch" href="https://youtu.be/NvOa6ityP1s">Watch on YouTube</a>
+  </div>
+</article>
+<article class="card has-video">
+  <video controls preload="none" playsinline poster="startrax-poster.jpg" src="startrax-demo.mp4">Your browser cannot play this video.</video>
+  <div class="body">
+    <h3>STAR-TRAX demo</h3>
+    <p>A space ship flight made in the Brain-Deck, set to DECK TRAX music. Press play.</p>
   </div>
 </article>
     </div>
@@ -303,13 +299,6 @@ footer a { color: var(--accent); }
   <div class="body">
     <h3>Brain-Deck games compilation</h3>
     <p>90 seconds of my games, from small to big: BLOCK DROP, PARA-FRUIT, NINJA, RAINLIGHT and COBRA COMMANDO. Edited in DECK FORGE to a new DECK TRAX track. Press play.</p>
-  </div>
-</article>
-<article class="card has-video">
-  <video controls preload="none" playsinline poster="promo-brain-cut.jpg" src="brain-cut.mp4">Your browser cannot play this video.</video>
-  <div class="body">
-    <h3>Brain Cut</h3>
-    <p>The Brain Cut video tool in action. Press play.</p>
   </div>
 </article>
     </div>
@@ -344,3 +333,10 @@ footer a { color: var(--accent); }
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
